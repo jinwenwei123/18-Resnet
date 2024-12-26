@@ -23,7 +23,6 @@ def val(model_epoch):
 
 
 if __name__ == '__main__':
-    model_epoch = 100  # 选择指定轮次的模型
     writer = SummaryWriter(log_dir="runs/resnet")
     for model_epoch in range(5, 101, 5):
         val(model_epoch)
